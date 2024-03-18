@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="springpack.com.Beanclass2" id="krish">
+        <property name="stdnames">
+        <list>
+        <value>Yash </value>
+        <value>Krish </value>
+        <value>Liyansh </value>
+        <value>Cherry </value>
+        <value>Chintu </value>
+        </list>
+        </property>
+        
+         <property name="rollnums">
+        <set> 
+        <value> 1</value>
+        <value> 2</value>
+        <value> 3</value>
+        <value> 4</value>
+        <value> 5</value>
+        </set>
+        </property>
+        
+        <property name="branchdetails">
+        <map>
+        <entry key="Mechanical" value="45" />
+        <entry key="Cse" value="40" />
+        <entry key="Ece" value="35" />
+        <entry key="Civil" value="22" />
+        <entry key="EEE" value="30" />
+        </map>
+        </property>
+        
+        <property name="branchhodinfo">
+         <props>
+         <prop key="Nagaprasd">Sr.professor</prop>
+         <prop key="Sam">jr.Professor</prop>
+         <prop key="Sunil">Lab Professor</prop>
+         <prop key="Rajendraprasad">Event organizer</prop>
+         <prop key="Pooja">Java Trainer</prop>
+         </props>
+        </property>
+          
+    </bean>
+</beans>
